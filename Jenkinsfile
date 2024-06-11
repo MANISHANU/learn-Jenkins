@@ -38,6 +38,17 @@ pipeline {
             steps {
                 sh 'echo This is Deploy'
             }
+        stage("print params"){
+            steps{
+                echo "Hello ${params.PERSON}"
+                echo "Biography: ${params.BIOGRAPHY}"
+                echo "Toggle: ${params.TOGGLE}"
+                echo "Choice: ${params.CHOICE}"
+                echo "Password: ${params.PASSWORD}"
+                echo "triggered test again"
+                error 'some failure'
+            }
+        }    
         }
     }
 }
