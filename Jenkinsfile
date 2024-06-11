@@ -56,6 +56,7 @@ environment{
                 
             }
         } 
+    }
 
     post { 
         always { 
@@ -69,4 +70,3 @@ environment{
         } 
        }
     }
-}
