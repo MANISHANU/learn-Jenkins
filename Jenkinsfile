@@ -53,6 +53,7 @@ environment{
                 echo "Choice: ${params.CHOICE}"
                 echo "Password: ${params.PASSWORD}"
                 echo "triggered test "
+                error 'some failure'
                 
             }
         } 
